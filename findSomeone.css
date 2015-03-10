@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url('font-awesome.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+body {
+   background: url(images/gift_background1.png) 
+         no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;   
+	padding-top: 20%;
+	font: normal 18px 'Source Sans Pro';
+    color: white; 
+    text-align: center;
+}
+ 
+
+h1 {
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 75px;
+}
+
+.envelope i {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10); 
+    transform: scale(10);
+    opacity: 0.2;
+}
+#cuboid {
+    width: 400px;
+    margin: 0 auto;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+#cuboid form {
+    /*counter translate*/
+	-webkit-transform: translateZ(-20px);
+	-ms-transform: translateZ(-20px);
+	transform: translateZ(-20px);
+	/*propogate 3d space for children*/
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	/*prevent height collapse as children are absolutely positioned*/
+	height: 40px;
+	/*for smooth animations*/
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.cuboid-text {
+    /*each face will be 40px high*/
+	line-height: 40px; height: 40px;
+	background: hsl(200, 40%, 20%);
+}
+
+.loader {
+	background: hsl(200, 40%, 30%);
+	-webkit-animation: phase 1s infinite;
+	animation: phase 1s infinite;
+}
+
+@-webkit-keyframes phase {
+	50% {background: hsl(200, 90%, 30%);}
+}
+@keyframes phase {
+	50% {background: hsl(200, 90%, 30%);}
+}
+
+#email {
+	background: white; outline: none; border: 0 none;
+	font: inherit; text-align: left; color: hsl(200, 40%, 30%);
+	display: block; width: 100%; padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#submit {display: none;}
+
+.submit-icon, .reset-icon {
+	position: absolute; top: 0; right: 0;
+	color: hsla(30, 50%, 30%, 0.20);
+	line-height: 40px; padding: 0 10px;
+	/*smooth transitions when user activates input and types something*/
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	/*to make the icons feel like buttons*/
+	cursor: pointer;
+}
+/*.active = when the user is typing something*/
+.submit-icon.active {color: hsl(30, 70%, 70%);}
+.reset-icon {color: hsla(0, 100%, 100%, 0.25); font-size: 14px;}
+
+#cuboid div {position: absolute; top: 0; left: 0; width: 100%;}
+
+/*3D transforms. Each face will be rotated in multiples of -90deg and moved 20px(half of their 40px height) out*/
+#cuboid div:nth-child(1) {-webkit-transform: rotateX(0deg) translateZ(20px);-ms-transform: rotateX(0deg) translateZ(20px);transform: rotateX(0deg) translateZ(20px);}
+#cuboid div:nth-child(2) {-webkit-transform: rotateX(-90deg) translateZ(20px);-ms-transform: rotateX(-90deg) translateZ(20px);transform: rotateX(-90deg) translateZ(20px);}
+#cuboid div:nth-child(3) {-webkit-transform: rotateX(-180deg) translateZ(20px);-ms-transform: rotateX(-180deg) translateZ(20px);transform: rotateX(-180deg) translateZ(20px);}
+#cuboid div:nth-child(4) {-webkit-transform: rotateX(-270deg) translateZ(20px);-ms-transform: rotateX(-270deg) translateZ(20px);transform: rotateX(-270deg) translateZ(20px);}
+
+/*the form will have 4 states/classes(default+3) for rotation*/
+#cuboid form:hover, 
+#cuboid form.ready {-webkit-transform: translateZ(-20px) rotateX(90deg);-ms-transform: translateZ(-20px) rotateX(90deg);transform: translateZ(-20px) rotateX(90deg);}
+#cuboid form.loading {-webkit-transform: translateZ(-20px) rotateX(180deg);-ms-transform: translateZ(-20px) rotateX(180deg);transform: translateZ(-20px) rotateX(180deg);}
+#cuboid form.complete {-webkit-transform: translateZ(-20px) rotateX(270deg);-ms-transform: translateZ(-20px) rotateX(270deg);transform: translateZ(-20px) rotateX(270deg);}
+
+
+
+.container {
+    padding: 10px 55px 0 0;
+}
+
+thead {
+    display: block;
+}
+
+tbody {
+    color: #000000;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cccccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #999;
+}
+
+.table-container {
+   
+    width: 50%;
+    margin: 2px auto;
+}
+
+.table-hidden {
+    visibility: hidden;
+}
+
+.table-view {
+    visibility: visible;
+}
+
+.table-container table{
+    width: 100%;
+}
+
+.scroll-container {
+    max-height: 150px;
+    overflow-y: scroll;
+}

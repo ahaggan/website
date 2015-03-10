@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+    padding: 60px 0 0 0;
+    background: url(images/main_background.png)                     
+         no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;   
+    font: normal 25px 'Source Sans Pro';
+}            
+
+.logo {
+    padding: 0px;
+    margin: 0;
+    width: 200px;
+    float: left;
+}
+
+.logoText {
+    font: normal 30px Pacifico;
+}
+
+
+img {
+    width: 50%;
+    padding: 5% 8%; 
+}
+
+
+p {
+    height: 100%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 200%;
+    width: 50%;
+    padding: 5%;
+    
+}
+
+#container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+.image-left img{
+    float: left;
+}
+
+.image-right img{
+    float: right;
+}
+
+.image-left p{
+    float: right;
+    
+}
+
+.image-right p{
+    
+    float: left;
+   
+}
+.content-light {
+    background-color: hsla(190, 70%, 90%, 0.7);
+    width: 100%;
+    height: 5%;  
+    margin: 5px;
+}
+
+.content-dark {
+    background-color: hsla(190, 70%, 10%, 0.7);
+    color: #ffffff;
+    width: 100%;
+    height: 5%;  
+    margin: 5px;
+}
+
+section {
+    display: inline-block;
+}
+
+#game {
+    background: #000000;
+}
+
+
+
+.gamePostion {
+    float: left;
+}
+
+div {
+    height: 500px;
+    width: 500px;
+    top: 0;
+    right: 0;
+}
+
+iframe {    
+    display: block;
+}
+
+
+
+
+ /*------------MEDIA------------------*/
+        @media screen and (max-width: 800px){
+            img {
+                clear: both;
+                width: 70%;
+                margin: 2% 15%;  
+            }
+            
+            p{
+                width: 60%;
+                margin: 0 20%;
+            }
+            
+            .image-left p {
+                clear: right;
+             
+            
+            }
+            
+            .image-right p{
+                clear: left;
+            }
+        }
+
+ @media screen and (max-width: 565px){
+      body{
+          padding: 220px 0 0 0;
+      }
+ }
+
+
+
+
+
+
+
+/*---------------------------3d animation----------------------------------------------------------------*/
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cd-background-wrapper {
+  background-color: rgba(0, 0, 0, 0)
+  position: absolute;
+  overflow: hidden;
+}
+.no-touch .cd-background-wrapper {
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  perspective: 400px;
+}
+.cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'web';
+  display: none;
+}
+.touch .cd-background-wrapper::before {
+  /* never visible - this is used in jQuery to check the device type */
+  content: 'mobile';
+}
+
+.cd-floating-background {
+  position: relative;
+}
+.cd-floating-background img {
+    float:right;
+  display: inline-block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.no-touch .cd-floating-background {
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.no-touch .cd-floating-background.is-absolute {
+  position: absolute;
+}
+.no-touch .cd-floating-background img:first-child {
+  -webkit-transform: translateZ(500px);
+  -moz-transform: translateZ(500px);
+  -ms-transform: translateZ(500px);
+  -o-transform: translateZ(500px);
+  transform: translateZ(500px);
+}
+.no-touch .cd-floating-background img:second-child{
+  -webkit-transform: translateZ(290px);
+  -moz-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  -o-transform: translateZ(290px);
+  transform: translateZ(290px);
+}
+.no-touch.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.nextGame p {
+    float: right;
+    width: 100%-500px;
+}
+
+
+
