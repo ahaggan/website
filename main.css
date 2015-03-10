@@ -1,4 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     padding: 60px 0 0 0;
     background: url(images/main_background.png)                     
@@ -65,10 +71,15 @@ p {
 }
 .content-light {
     background-color: hsla(190, 70%, 90%, 0.7);
+    
+}
+
+.content {
     width: 100%;
     height: 5%;  
     margin: 5px;
 }
+    
 
 .content-dark {
     background-color: hsla(190, 70%, 10%, 0.7);
@@ -103,6 +114,115 @@ iframe {
     display: block;
 }
 
+.nextGame p {
+    float: right;
+    width: 100%-500px;
+}
+
+
+
+
+.buttons-3d {
+    height: 100%;
+    position: relative;
+}
+
+.buttons-3d > section {
+    margin: 0 auto;
+    padding: 6em 3em;
+    text-align: center;
+    color: fuchsia;
+}
+    
+.btn {
+    border: none;
+    position: relative;
+    background: hsl(240, 70%, 70%);
+    padding: 28px 90px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 15px 30px;
+    color: inherit;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    outline: none;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.button-perspective {
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.btn-3d {
+    display: block;
+    background: #5cbcf6;
+    outline: 1px solid transparent;
+    transform-style: preserve-3d;
+}
+
+.btn-3d:active {
+    background: #55b7f3;
+}
+
+.btn-find:after {
+    width: 20%;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    background: #53a6d7;
+    -moz-transform-origin: 100% 0%;
+    -moz-transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 0%;
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform-origin: 100% 0%;
+    -ms-transform: rotateY(-90deg);
+    transform-origin: 100% 0%;
+    transform: rotateY(-90deg);
+}
+
+.btn-find:hover {
+    -moz-transform: rotateY(35deg);
+    -webkit-transform: rotateY(35deg);
+    -ms-transform: rotateY(35deg);
+    transform: rotateY(35deg);
+}
+
+.btn-how:after {
+    width: 20%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    background: #53a6d7;
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateY(90deg);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateY(90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateY(90deg);
+    transform-origin: 0% 0%;
+    transform: rotateY(90deg);
+}
+
+.btn-how:hover {
+    -moz-transform: rotateY(-35deg);
+    -webkit-transform: rotateY(-35deg);
+    -ms-transform: rotateY(-35deg);
+    transform: rotateY(-35deg);
+}
 
 
 
@@ -136,106 +256,11 @@ iframe {
       }
  }
 
-
-
-
-
-
-
-/*---------------------------3d animation----------------------------------------------------------------*/
-
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@media screen and (max-width:480px){
+    .buttons-3d {
+        font-size: 1.2em;
+        display: block;
+    }
 }
-
-.cd-background-wrapper {
-  background-color: rgba(0, 0, 0, 0)
-  position: absolute;
-  overflow: hidden;
-}
-.no-touch .cd-background-wrapper {
-  -webkit-perspective: 400px;
-  -moz-perspective: 400px;
-  perspective: 400px;
-}
-.cd-background-wrapper::before {
-  /* never visible - this is used in jQuery to check the device type */
-  content: 'web';
-  display: none;
-}
-.touch .cd-background-wrapper::before {
-  /* never visible - this is used in jQuery to check the device type */
-  content: 'mobile';
-}
-
-.cd-floating-background {
-  position: relative;
-}
-.cd-floating-background img {
-    float:right;
-  display: inline-block;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* fixes a Firefox bug - images not correctly rendered*/
-  background-color: rgba(255, 255, 255, 0.01);
-}
-.cd-floating-background img:not(:first-child) {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.no-touch .cd-floating-background {
-  top: 0;
-  left: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.no-touch .cd-floating-background.is-absolute {
-  position: absolute;
-}
-.no-touch .cd-floating-background img:first-child {
-  -webkit-transform: translateZ(500px);
-  -moz-transform: translateZ(500px);
-  -ms-transform: translateZ(500px);
-  -o-transform: translateZ(500px);
-  transform: translateZ(500px);
-}
-.no-touch .cd-floating-background img:second-child{
-  -webkit-transform: translateZ(290px);
-  -moz-transform: translateZ(290px);
-  -ms-transform: translateZ(290px);
-  -o-transform: translateZ(290px);
-  transform: translateZ(290px);
-}
-.no-touch.no-preserve-3d .cd-floating-background {
-  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
-  position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-.nextGame p {
-    float: right;
-    width: 100%-500px;
-}
-
-
+        
 

@@ -1,3 +1,5 @@
+
+
 var game = document.getElementById("game").getContext("2d");
 game.font = "30px Arial";
 

@@ -33,3 +33,4 @@ $(".reset-icon").click(function(){
 	$("#cuboid form").removeClass("complete");
     $("table").removeClass("table-view").addClass("table-hidden");
 });
+

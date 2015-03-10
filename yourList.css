@@ -84,3 +84,12 @@ button:focus {
 .addButton {
     margin: 10px auto;
 }
+
+.content {
+    overflow-x: auto;
+}
+<!----------------------Media------------------>
+ @media screen and (max-width: 800px){
+.wrapper {
+    padding: 220px 0 0 0;
+}

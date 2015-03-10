@@ -78,19 +78,30 @@ h1 {
 }
 
 #email {
-	background: white; outline: none; border: 0 none;
-	font: inherit; text-align: left; color: hsl(200, 40%, 30%);
-	display: block; width: 100%; padding: 0 10px;
+	background: white;
+    outline: none; 
+    border: 0 none;
+	font: inherit; 
+    text-align: left; 
+    color: hsl(200, 40%, 30%);
+	display: block; 
+    width: 100%; 
+    padding: 0 10px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#submit {display: none;}
+#submit {
+    display: none;
+}
 
 .submit-icon, .reset-icon {
-	position: absolute; top: 0; right: 0;
+	position: absolute;
+    top: 0; 
+    right: 0;
 	color: hsla(30, 50%, 30%, 0.20);
-	line-height: 40px; padding: 0 10px;
+	line-height: 40px;
+    padding: 0 10px;
 	/*smooth transitions when user activates input and types something*/
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -98,22 +109,60 @@ h1 {
 	cursor: pointer;
 }
 /*.active = when the user is typing something*/
-.submit-icon.active {color: hsl(30, 70%, 70%);}
-.reset-icon {color: hsla(0, 100%, 100%, 0.25); font-size: 14px;}
+.submit-icon.active {
+    color: hsl(30, 70%, 70%);
+}
+.reset-icon {
+    color: hsla(0, 100%, 100%, 0.25);
+    font-size: 14px;
+}
 
-#cuboid div {position: absolute; top: 0; left: 0; width: 100%;}
+#cuboid div {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+}
 
 /*3D transforms. Each face will be rotated in multiples of -90deg and moved 20px(half of their 40px height) out*/
-#cuboid div:nth-child(1) {-webkit-transform: rotateX(0deg) translateZ(20px);-ms-transform: rotateX(0deg) translateZ(20px);transform: rotateX(0deg) translateZ(20px);}
-#cuboid div:nth-child(2) {-webkit-transform: rotateX(-90deg) translateZ(20px);-ms-transform: rotateX(-90deg) translateZ(20px);transform: rotateX(-90deg) translateZ(20px);}
-#cuboid div:nth-child(3) {-webkit-transform: rotateX(-180deg) translateZ(20px);-ms-transform: rotateX(-180deg) translateZ(20px);transform: rotateX(-180deg) translateZ(20px);}
-#cuboid div:nth-child(4) {-webkit-transform: rotateX(-270deg) translateZ(20px);-ms-transform: rotateX(-270deg) translateZ(20px);transform: rotateX(-270deg) translateZ(20px);}
+#cuboid div:nth-child(1) {
+    -webkit-transform: rotateX(0deg) translateZ(20px);
+    -ms-transform: rotateX(0deg) translateZ(20px);
+    transform: rotateX(0deg) translateZ(20px);
+}
+#cuboid div:nth-child(2) {
+    -webkit-transform: rotateX(-90deg) translateZ(20px);
+    -ms-transform: rotateX(-90deg) translateZ(20px);
+    transform: rotateX(-90deg) translateZ(20px);
+}
+#cuboid div:nth-child(3) {
+    -webkit-transform: rotateX(-180deg) translateZ(20px);
+    -ms-transform: rotateX(-180deg) translateZ(20px);
+    transform: rotateX(-180deg) translateZ(20px);
+}
+#cuboid div:nth-child(4) {
+    -webkit-transform: rotateX(-270deg) translateZ(20px);
+    -ms-transform: rotateX(-270deg) translateZ(20px);
+    transform: rotateX(-270deg) translateZ(20px);
+}
 
 /*the form will have 4 states/classes(default+3) for rotation*/
 #cuboid form:hover, 
-#cuboid form.ready {-webkit-transform: translateZ(-20px) rotateX(90deg);-ms-transform: translateZ(-20px) rotateX(90deg);transform: translateZ(-20px) rotateX(90deg);}
-#cuboid form.loading {-webkit-transform: translateZ(-20px) rotateX(180deg);-ms-transform: translateZ(-20px) rotateX(180deg);transform: translateZ(-20px) rotateX(180deg);}
-#cuboid form.complete {-webkit-transform: translateZ(-20px) rotateX(270deg);-ms-transform: translateZ(-20px) rotateX(270deg);transform: translateZ(-20px) rotateX(270deg);}
+#cuboid form.ready {
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+    -ms-transform: translateZ(-20px) rotateX(90deg);
+    transform: translateZ(-20px) rotateX(90deg);
+}
+#cuboid form.loading {
+    -webkit-transform: translateZ(-20px) rotateX(180deg);
+    -ms-transform: translateZ(-20px) rotateX(180deg);
+    transform: translateZ(-20px) rotateX(180deg);
+}
+#cuboid form.complete {
+    -webkit-transform: translateZ(-20px) rotateX(270deg);
+    -ms-transform: translateZ(-20px) rotateX(270deg);
+    transform: translateZ(-20px) rotateX(270deg);
+}
 
 
 
@@ -158,4 +207,19 @@ tbody tr:nth-child(even) {
 .scroll-container {
     max-height: 150px;
     overflow-y: scroll;
+}
+
+
+<!---------------------------Media----------------------------->
+@media screen and (max-width: 565px){
+      h1 {
+          margin: 220px auto 20px auto;
+          padding-top: 220px;
+          font-size: 18px;
+      }
+ }
+@media screen and (max-width: 430px){
+    #cuboid{
+        width: 90%;
+    }
 }
