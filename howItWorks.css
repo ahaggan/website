@@ -1,46 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-body {
-    padding: 60px 0 0 0;
-    
-    font: normal 25px 'Source Sans Pro';
-}    
 
 
 .link {
     text-decoration: none;
     color: black;
-    font: bold 25px 'Source Sans Pro';
+    font: bold 16px 'Source Sans Pro';
 }
 
 /* ============================================================
   SECTIONS
 ============================================================ */
-section.module:last-child {
+.module:last-child {
   margin-bottom: 0;
 }
-section.module h2 {
+.module h2 {
   margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
-section.module p {
+.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
 }
-section.module p:last-child {
+.module p:last-child {
   margin-bottom: 0;
 }
-section.module.content {
+.module.content {
     padding: 40px 0;
-    background-color: hsla(190, 70%, 90%, 0.7);
+    
 }
-section.module.parallax {
+.parallax {
   padding: 240px 0;
   background-position: 0 0;
 }
-section.module.parallax h1 {
+.parallax h1 {
   color: #1e1e1e;
   font-size: 48px;
   line-height: 1;
@@ -49,40 +43,40 @@ section.module.parallax h1 {
   text-transform: uppercase;
   text-shadow: 0 0 10px white;
 }
-section.module.parallax-one {
+.parallax-one {
   background-image: url("images/main_background.png");
     background-size: cover;                   
             
 }
-section.module.parallax-two {
+.parallax-two {
   background-image: url("images/signedUp.jpg");
     background-size: cover; 
 }
-section.module.parallax-three {
+.parallax-three {
   background-image: url("images/givingGift.jpg");
     background-size: cover; 
 }
-section.module.parallax-four {
+.parallax-four {
   background-image: url("images/FridayQuote-Churchill-Desktop.png");
     background-size: cover; 
 }
 
 @media all and (min-width: 600px) {
-  section.module h2 {
+  .module h2 {
     font-size: 42px;
   }
-  section.module p {
+  .module p {
     font-size: 20px;
   }
-  section.module.parallax {
+  .parallax {
     padding: 300px 0;
   }
-  section.module.parallax h1 {
+  .parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
+  .parallax h1 {
     font-size: 160px;
   }
 }
