@@ -16,12 +16,7 @@ body {
     font: normal 25px 'Source Sans Pro';
 }            
 
-.logo {
-    padding: 0px;
-    margin: 0;
-    width: 200px;
-    float: left;
-}
+
 
 .logoText {
     font: normal 30px Pacifico;
@@ -264,3 +259,7 @@ iframe {
 }
         
 
+
+#menu img {
+    height: 100%;
+}

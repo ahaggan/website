@@ -241,12 +241,13 @@ var playing = false;
         }
 
         startNewGame();
-        
-function runGame(){
+        setInterval(update, 40);
+
+ function runGame(){
     if(playing == false){
         playing = true;
-        while(playing = true){
-            setInterval(update, 40);
+        while(playing == true){
+            
         }
     }
 }
