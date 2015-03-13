@@ -3,7 +3,7 @@
 .logo img{
     padding: 0px;
     margin: 0;
-    width: 100px;
+    width: 60px;
     float: left;
 }
 
@@ -25,7 +25,7 @@ header {
 
 ul li {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 8px 10px;
 }
 
 .navigation {
@@ -36,7 +36,7 @@ ul li {
     position: relative;
 }
 
-a {
+li a {
     text-decoration: none;
     font-family: 'Source Sans Pro';
     font-size: 20px;
@@ -47,6 +47,7 @@ nav {
     position: relative;
     width: 490px;
     position: relative;
+    font: normal 25px 'Source Sans Pro';
 }
 
 .centre {

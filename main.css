@@ -4,6 +4,10 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     padding: 60px 0 0 0;
@@ -13,14 +17,10 @@ body {
          -moz-background-size: cover;
          -o-background-size: cover;
          background-size: cover;   
-    font: normal 25px 'Source Sans Pro';
-}            
-
-
-
-.logoText {
-    font: normal 30px Pacifico;
+    font: normal 18px 'Source Sans Pro';
+    text-align: center;
 }
+
 
 
 img {
@@ -37,12 +37,14 @@ p {
     line-height: 200%;
     width: 50%;
     padding: 5%;
+    font: normal 25px 'Source Sans Pro';
     
 }
 
-#container {
+.container {
     width: 90vw;
     margin: 0 auto;
+    
 }
 
 
@@ -88,6 +90,10 @@ section {
     display: inline-block;
 }
 
+#menu img {
+    height: 100%;
+}
+
 #game {
     background: #000000;
 }
@@ -96,13 +102,6 @@ section {
 
 .gamePostion {
     float: left;
-}
-
-div {
-    height: 500px;
-    width: 500px;
-    top: 0;
-    right: 0;
 }
 
 iframe {    
@@ -122,7 +121,7 @@ iframe {
     position: relative;
 }
 
-.buttons-3d > section {
+.buttons-3d  section {
     margin: 0 auto;
     padding: 6em 3em;
     text-align: center;
@@ -222,44 +221,37 @@ iframe {
 
 
  /*------------MEDIA------------------*/
-        @media screen and (max-width: 800px){
-            img {
-                clear: both;
-                width: 70%;
-                margin: 2% 15%;  
-            }
+@media screen and (max-width: 800px){
+    img {
+        clear: both;
+        width: 70%;
+        margin: 2% 15%;  
+    }
+    
+    p{
+        width: 60%;
+        margin: 0 20%;
+    }
+        
+    .image-left p {
+        clear: right;
+     }
             
-            p{
-                width: 60%;
-                margin: 0 20%;
-            }
-            
-            .image-left p {
-                clear: right;
-             
-            
-            }
-            
-            .image-right p{
-                clear: left;
-            }
-        }
+    .image-right p{
+        clear: left;
+    }
+}
 
- @media screen and (max-width: 565px){
+@media screen and (max-width: 565px){
       body{
           padding: 220px 0 0 0;
       }
+}
+
+@media screen and (max-width: 400px){
+      p{
+          font-size: 14px;
+      }
  }
 
-@media screen and (max-width:480px){
-    .buttons-3d {
-        font-size: 1.2em;
-        display: block;
-    }
-}
-        
 
-
-#menu img {
-    height: 100%;
-}

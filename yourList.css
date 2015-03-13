@@ -90,6 +90,19 @@ button:focus {
 }
 <!----------------------Media------------------>
  @media screen and (max-width: 800px){
-.wrapper {
-    padding: 220px 0 0 0;
+    .wrapper {
+        padding: 220px 0 0 0;
+    }
+}
+     
+@media screen and (max-width: 565px){
+    body{
+        padding-top: 220px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        font-size: 12px;
+    }
 }

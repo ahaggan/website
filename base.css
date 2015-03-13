@@ -1,5 +1,5 @@
-html, body, div, h1, h2, p, a, img, b, center,
-footer, nav, section {
+html, body, div, h1, h2, p, a, img, center,
+footer, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,14 +8,8 @@ footer, nav, section {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-footer, header, nav, section {
-  display: block;
-}
 
-body {
-  line-height: 1;
-}
+
 
 /* ============================================================
   BOX SIZING & CLEARFIX
@@ -35,19 +29,6 @@ body {
 }
 
 /* ============================================================
-  HTML & BODY
-============================================================ */
-body {
-   
-    background-color: #1e1e1e;
-    color: #505050;
-    font-family: 'Source Sans Pro',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-}    
-
-
-/* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
 .wrapper {
@@ -56,8 +37,12 @@ body {
 }
 
 main {
-  display: block;
-  background-color: #fff;
+    display: block;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #505050;
+    font-family: 'Source Sans Pro',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
 }
 
 .container {
