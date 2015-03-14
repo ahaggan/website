@@ -2,27 +2,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   lang="en-GB" xml:lang="en-GB">
 <head>
-    <meta c="UTF-8"/>
+    <meta charset="UTF-8"/>
     <title>Find Someone</title>
-    <link rel="stylesheet"  type="text/css" href="findSomeone.css"/>
-    <link rel="stylesheet" type="text/css" href="navigation.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"  type="text/css" href="css/findSomeone.css"/>
+    <link rel = "stylesheet" type="text/css" href="css/navigation.css"/>
+    
+    <script src="js/modernizr.js"></script>
+    
+    <script type="text/javascript" src="selectivizr.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="selectivizr.js"></script>
+        <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
 </head>
 <body>
    <header>
        
         <div class="logo">
-            <img src="images/logoYellow.png"/>
+            <img src="images/logoYellow.png" alt="logo"/>
         </div>
         
         <div class="navigation">
            <nav class="centre">
                <ul id="menu">
-                   <b>
+                   
                    <li><a href="index.html">Home</a></li>
                    <li><a href="findSomeone.html">Find Someone</a></li>
                    <li><a href="yourList.html">Your List</a></li>
                    <li><a href="howItWorks.html">How it works</a></li>
-                   </b>
+                   
                </ul>
            </nav>
         </div>
@@ -146,7 +155,7 @@
         </table>
     </div>   
     <script src="jquery-1.11.2.js"></script>
-    <script src="findSomeone.js"></script>
-    <script src="table.js"></script>
+    <script src="js/findSomeone.js"></script>
+    <script src="js/table.js"></script>
 </body>
 </html>

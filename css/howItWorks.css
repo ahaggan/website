@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+
+
+.link {
+    text-decoration: none;
+    color: black;
+    font: bold 16px 'Source Sans Pro';
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+.module:last-child {
+  margin-bottom: 0;
+}
+.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.module p:last-child {
+  margin-bottom: 0;
+}
+.module.content {
+    padding: 40px 0;
+    
+}
+.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+}
+.parallax h1 {
+  color: #1e1e1e;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+}
+.parallax-one {
+  background-image: url("../images/main_background.png");
+    background-size: cover;                   
+            
+}
+.parallax-two {
+  background-image: url("../images/signedUp.jpg");
+    background-size: cover; 
+}
+.parallax-three {
+  background-image: url("../images/givingGift.jpg");
+    background-size: cover; 
+}
+.parallax-four {
+  background-image: url("../images/FridayQuote-Churchill-Desktop.png");
+    background-size: cover; 
+}
+
+@media all and (min-width: 600px) {
+  .module h2 {
+    font-size: 42px;
+  }
+  .module p {
+    font-size: 20px;
+  }
+  .parallax {
+    padding: 300px 0;
+  }
+  .parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  .parallax h1 {
+    font-size: 160px;
+  }
+}

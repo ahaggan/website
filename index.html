@@ -2,15 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   lang="en-GB" xml:lang="en-GB">
 <head>
-    <meta c="UTF-8"/>
+    <meta charset="UTF-8"/>
     <title>Gift List</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel = "stylesheet" type="text/css" href="navigation.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+    <link rel = "stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "css/main.css"/>
     <script src="js/modernizr.js"></script>
     
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript" src="selectivizr.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="selectivizr.js"></script>
+        <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
 </head>
 <body>
@@ -21,18 +23,18 @@
    <header>
        
         <div class="logo">
-            <img src="images/logoFucia.png"/>
+            <img src="images/logoFucia.png" alt="logo"/>
         </div>
         
         <div class="navigation">
            <nav class="centre">
                <ul id="menu">
-                   <b>
+                   
                    <li><a href="index.html">Home</a></li>
                    <li><a href="findSomeone.html">Find Someone</a></li>
                    <li><a href="yourList.html">Your List</a></li>
                    <li><a href="howItWorks.html">How it works</a></li>
-                   </b>
+                   
                </ul>
            </nav>
         </div>
@@ -43,46 +45,38 @@
   <main>
   
     <section class="image-left content-light content">
-        <img src="images/pie_chart.png"/>
-        <p>75% of people said they were upset when a friend or family member didn't but them a gift for there birthday.</p>
+        <img src="images/pie_chart.png" alt="Pi Chart"/>
+        <p class="story">75% of people said they were upset when a friend or family member didn't but them a gift for there birthday.</p>
     </section>
     
-    <section class="image-right content-dark content">
-        <img src="images/barchartRugged.png"/>
-        <p>When asked, the majority of people said it was forgetting that prevented them buying a gift followed second by not knowing what to get. </p>
+    <section class="image-right content-light content">
+        <img src="images/barchartRugged.png" alt="barchart"/>
+        <p class="story">When asked, the majority of people said it was forgetting that prevented them buying a gift followed second by not knowing what to get. </p>
     </section>
     
     <section class="content-light image-left content">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v5T8QwIyDkE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="true" align="middle"></iframe>
-       
-        <p>We all have an inherant understanding that it is good to give.</p>
+        <iframe  src="https://www.youtube.com/embed/v5T8QwIyDkE?rel=0&amp;showinfo=0" ></iframe>
+        <p class="story">We all have an inherant understanding that it is good to give.</p>
     </section>
     
     <section class="buttons-3d content">
-        
-            <p class="button-perspective">
-                
-                    <button onclick="change('findSomeone.html')" class="btn btn-3d btn-find">Find Someone</button>
-                        
+            <p class="button-perspective left-btn">
+                <button onclick="change('findSomeone.html')" class="btn btn-3d btn-find">Find Someone</button>          
             </p>
         
-            <p class="button-perspective">
-                
-                    <button id="how" class="btn btn-3d btn-how">How it works?</button>
-                
-                
+            <p class="button-perspective right-btn">
+                <button onclick="change('howItWorks.html')" class="btn btn-3d btn-how">How it works?</button>
             </p>
     </section>
    
     
     
     <section class="content-light content" >
-        <p class="nextGame">Or...<br/>You could just get distracted as usual and play this pointless game?!?!?</p>        
+        <p class="nextGame">Or...<br/>You could just get distracted as usual and hover over this curious black square.</p>        
         <div class="gamePostion">
-            <canvas id="game" height="500px" width="500px" onmouseover="runGame()">
-            </canvas>
+            <canvas id="game" height="500" width="500" onmouseover="runGame()"></canvas>
            
-            <script src="game.js" type="text/javascript"></script>
+            <script src="js/game.js" type="text/javascript"></script>
         </div>
     </section>
     <!--
@@ -94,8 +88,8 @@
   </div> <!-- end container-->
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="container.js"></script> 
-  <script src="main.js"></script>
+  <script src="js/container.js"></script> 
+  <script src="js/main.js"></script>
   
 </body>
 </html>

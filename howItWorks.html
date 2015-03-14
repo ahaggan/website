@@ -2,19 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   lang="en-GB" xml:lang="en-GB">
 <head>
-    <meta c="UTF-8"/>
+    <meta charset="UTF-8"/>
     
     <title>How it works</title>
     <link rel="shortcut icon" href="favicon.ico"/>
     
-    <link rel = "stylesheet" type="text/css" href="navigation.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "howItWorks.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "base.css"/>
+    <link rel = "stylesheet" type="text/css" href="css/navigation.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "css/howItWorks.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "css/base.css"/>
     <link rel="shortcut icon" href="images/logoBandW.ico"/>
     <script src="js/modernizr.js"></script>
-    
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="selectivizr.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="selectivizr.js"></script>
+        <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
 </head>
 <body>
@@ -22,18 +24,18 @@
     <header>
        
         <div class="logo">
-            <img src="images/logoGreen.png"/>
+            <img src="images/logoGreen.png" alt = "logo"/>
         </div>
         
         <div class="navigation">
            <nav class="centre">
                <ul id="menu">
-                   <b>
+                   
                    <li><a href="index.html">Home</a></li>
                    <li><a href="findSomeone.html">Find Someone</a></li>
                    <li><a href="yourList.html">Your List</a></li>
                    <li><a href="howItWorks.html">How it works</a></li>
-                   </b>
+                   
                </ul>
            </nav>
         </div>
@@ -86,12 +88,12 @@
         
         <section class="module parallax parallax-four">
             <div class="container">
-                <h1></h1>
+                
             </div>
         </section>
     </main>
 </div>    
-<script src="howItWorks.js"></script>
-<script src="container.js"></script> 
+<script src="js/howItWorks.js"></script>
+<script src="js/container.js"></script> 
 </body>
 </html>

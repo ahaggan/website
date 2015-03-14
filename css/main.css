@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 60px 0 0 0;
+    background: url(../images/main_background.png)                     
+         no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;   
+    font: normal 18px 'Source Sans Pro';
+    text-align: center;
+}
+
+
+
+img {
+    width: 50%;
+    padding: 5% 8%; 
+}
+
+
+p {
+    height: 100%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 200%;
+    width: 50%;
+    padding: 5%;
+    font: normal 25px 'Source Sans Pro';
+    
+}
+
+.story {
+        
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    
+}
+
+
+.image-left img{
+    float: left;
+}
+
+.image-right img{
+    float: right;
+}
+
+.image-left p{
+    float: right;
+    
+}
+
+.image-right p{
+    
+    float: left;
+   
+}
+.content-light {
+    background-color: hsla(190, 70%, 90%, 0.7);
+    
+}
+
+.content {
+    width: 100%;
+    height: 5%;  
+    margin: 5px;
+}
+    
+
+.content-dark {
+    background-color: hsla(190, 70%, 10%, 0.7);
+    color: #ffffff;
+    width: 100%;
+    height: 5%;  
+    margin: 5px;
+}
+
+section {
+    display: inline-block;
+}
+
+#menu img {
+    height: 100%;
+}
+
+#game {
+    background: #000000;
+}
+
+iframe {    
+    display: block;
+}
+
+.buttons-3d {
+    height: 50%;
+    position: relative;
+}
+
+.buttons-3d  section {
+    margin: 0 auto;
+    padding: 6em 3em;
+    text-align: center;
+    color: fuchsia;
+}
+    
+.btn {
+    border: none;
+    position: relative;
+    background: hsl(240, 70%, 70%);
+    padding: 28px 90px;
+    text-transform: uppercase;
+    margin: 1% 3%;
+    color: inherit;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    outline: none;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.button-perspective {
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.btn-3d {
+    display: block;
+    background: #5cbcf6;
+    outline: 1px solid transparent;
+    transform-style: preserve-3d;
+}
+
+.btn-3d:active {
+    background: #55b7f3;
+}
+
+.btn-find:after {
+    width: 20%;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    background: #53a6d7;
+    -moz-transform-origin: 100% 0%;
+    -moz-transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 0%;
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform-origin: 100% 0%;
+    -ms-transform: rotateY(-90deg);
+    transform-origin: 100% 0%;
+    transform: rotateY(-90deg);
+}
+
+.btn-find:hover {
+    -moz-transform: rotateY(35deg);
+    -webkit-transform: rotateY(35deg);
+    -ms-transform: rotateY(35deg);
+    transform: rotateY(35deg);
+}
+
+.btn-how:after {
+    width: 20%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    background: #53a6d7;
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateY(90deg);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateY(90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateY(90deg);
+    transform-origin: 0% 0%;
+    transform: rotateY(90deg);
+}
+
+.btn-how:hover {
+    -moz-transform: rotateY(-35deg);
+    -webkit-transform: rotateY(-35deg);
+    -ms-transform: rotateY(-35deg);
+    transform: rotateY(-35deg);
+}
+iframe {
+    width: 560px;
+    height: 315px;
+    frameborder: 0; 
+    allowfullscreen: true; 
+    align: middle;
+}
+
+canvas {
+    height: 500px;
+    width: 500px;
+}
+
+.left-btn {
+    float: left;
+}
+
+.right-btn {
+    float: right;
+}
+
+
+ /*------------MEDIA------------------*/
+@media screen and (max-width: 800px){
+    img {
+        clear: both;
+        width: 70%;
+        margin: 2% 15%;  
+    }
+    
+    p{
+        width: 60%;
+        margin: 0 20%;
+    }
+        
+    .image-left p {
+        clear: right;
+     }
+            
+    .image-right p{
+        clear: left;
+    }
+}
+
+@media screen and (max-width: 565px){
+      body{
+          padding: 220px 0 0 0;
+      }
+}
+
+@media screen and (max-width: 400px){
+      p{
+          font-size: 14px;
+      }
+ }
+
+@media screen and (max-width: 725px){
+    btn{
+        font-size: 0.1em;
+    }
+    
+    .buttons-3d{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 555px){
+    canvas {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 625px){
+    iframe {
+        display: none;
+    }
+}

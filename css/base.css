@@ -1,0 +1,62 @@
+html, body, div, h1, h2, p, a, img, center,
+footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+
+/* ============================================================
+  BOX SIZING & CLEARFIX
+============================================================ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #505050;
+    font-family: 'Source Sans Pro',"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================================
+  TEXT LEVEL SEMANTICS
+============================================================ */
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
