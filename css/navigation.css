@@ -51,15 +51,14 @@ a:hover {
 
 nav {
     position: relative;
-    width: 490px;
-    position: relative;
+    width: 550px;
     font: normal 25px 'Source Sans Pro';
 }
 
 .centre {
     margin-left: auto;
     margin-right: auto;
-    left: 5%;
+    left: 0;
     right: 0;
     transition: all 0.7s ease;
 }
@@ -67,7 +66,7 @@ nav {
 .right {
     margin-left: auto;
     margin-right: auto;
-    left: -5%;
+    left: -15%;
     right: 0;
     transform: translateX(100%);
     transition: all 0.7s ease;
@@ -98,3 +97,12 @@ nav {
         position: absolute;
      }
  }
+footer {
+    position: abosolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(190, 70%, 10%, 0.7);
+    z-index: 999;
+    height: 60px;
+}

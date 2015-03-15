@@ -49,15 +49,15 @@
             
 }
 .parallax-two {
-  background-image: url("../images/signedUp.jpg");
+  background-image: url("../images/signedUp.png");
     background-size: cover; 
 }
 .parallax-three {
-  background-image: url("../images/givingGift.jpg");
+  background-image: url("../images/givingGift.png");
     background-size: cover; 
 }
 .parallax-four {
-  background-image: url("../images/FridayQuote-Churchill-Desktop.png");
+  background-image: url("../images/givingQuote.png");
     background-size: cover; 
 }
 

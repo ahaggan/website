@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  lang="en-GB" xml:lang="en-GB">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Report</title>
+</head>
+<body>
+    <h1>My Website Report</h1>
+    <p>Apart from my own work, I have used the JQuery library, a 'Font Awesome' font set and some images(which i edited). All this is Open Source. </p>
+    <p>For this report, I will first give an overview of each page I created and then describe what I have done in relation to the marking criteria.</p>
+    <h2>Page Overview</h2>
+    <h3>Over all pages</h3>
+    <p>Each page contains a navigation bar, this has its own css file (navigation.css) and js file(container.js). When scrolling down, if the screen is wide enough, the navigation bar will slide to the right. With the minor exception of the 3d buttons on the main page my website is fully responsive and will scale down to a mobile screen size. This is not optimal viewing, but is clear to read and fully functional.</p>
+    <h3>Main Page</h3>
+    <p>The main page consists of image and text sections, these describe a (obviously) made up story about why you might want to use the website. This also contains an embedded youtube video(about giving), some buttons after the story which will link to relevant pages and a javascript game. This game records your high score, but eventually I would like to keep a high score and maybe a leaderboard in a server database so you can compete with others.</p>
+    <h3>Find Somebody page</h3>
+    <p>This page is very minimal and serves the purpose of finding sombody you want to buy a gift for. I like the css/javascript animated entry form. When submitted it returns a table hopefully containing the person you were looking for. Currently the table is hard coded in, but during implementing the serverside this should search a database of users and return people that match or not found. This page would be the same design as a sign up page, but instead of showing a table if would return a sign up form, unless you were already in the database. This is where I used the 'Font Awesome' font package 
+    which made some nice images for me to use. I edited their css file to jsut include the specific images I wanted. I could now make these images myself, but when creating this I wanted to get some experience incorporating somebody elses work into mine, as this seems very popular in web design.</p>
+    <h3>Your list</h3>
+    This page contains a list of gifts that a person has chosen. It would allow them to add, edit and remove items from their list. Again this would be done through a database on the server-side and so the page is currently, just hardwired with values. The add button should make a text box appear, like the find someone bar on the previous page, but I ran out of time. This page would be viewable via the find someone page, but would have slightly different button funcionality if you were looking at someone elses list.
+    <h3>How it works</h3>
+    <p>This gives an overview of how the process of the website works, it incorporates links at the relevant points</p>
+    <h2>Testing</h2>
+    <p>I have tested my website on Chrome, Firefox, Safari and IE 11. It is fully functional on all except IE, although some of the animations don't look quite as nice. This is cause by the 3D properties of my form input for finding people. Given more time, this was the next item on my agenda, but didn't manage to get to it.</p>
+    <h2>Marking Criteria</h2>
+    <h3>HTML</h3>
+    <p>I have attempted to keep my HTML clean using indentation and some of the new HTML5 tags such as header, main, nav and section. I believe I have followed the guidelines for the polyglot HTML5 standards and have run all my files through a validator and there are no errors in the browsers I have tested on.</p>
+    <h3>CSS</h3>
+    <p>I have attempted to display a range of CSS skills, most notably: 3d buttons on the home page, 3d-rotating input form and the parallax scrolling effect for the How it Works page. I found positioning items where I wanted on my page, for some reason, one of the most difficult tasks. I toyed with the idea of using a framework to support this, but decided to persevere and feel much more confident about positioning now.</p>
+    <h3>JavaScript</h3>
+    <p>I started attempting my animations using pure JavaScript, however when attempting some more complex transformations most online advice suggested using libraries, so I gave in and used JQuery for a number of my animations. I didn't want this to hinder me learing pure JavaScript so I decided to create a basic game implemented using purely javascript and called by an onmouseover command from my HTML.</p>
+    <h3>Gimp</h3>
+    <p>All the images I used were edited in some way by gimp, I altered the contrast and colour of my background image and resized the images for my parallax scrolling. I combined and made final adjustments to each of my created SVG images here, saving the results as png files. These seemed more compatible, I had some trouble trying to put my SVG image directly into the page(I wanted to interact with it), so retraced my steps and just displayed the plain image file instead.</p>
+    <h3>Inkscape</h3>
+    <p>I created my logo from scratch using the inkscape drawing tools. I spent a long while figuring out the 3d object tool only to use the isometric grid to draw my cube. I used various layers, drawing and colouring tools to contruct my image. I am very proud of my final result, I wish I had managed to give it a more promenant place on my website. Have made it an SVG it will scale perfectly to any size. I also made the Pie and Bar charts from scratch.</p>
+    <h3>Extra Features</h3>
+    <p>Two things appeal to me about websites, they are the eloquent design and fun and interesting things they can do. Having struggled for a while thinking about what a good design might look like and making little progress, I decided to take the route of fun and interesting. This lead me to research into some of the new things that websites can do and some of the newer features of css3. I implemented two different types of animated buttons and a rotating input form. Along the same vein, I created a javascript game, that whilst a simple idea, is fun to play and adds that little extra something that I like a website to have. Towards the end of my website I implemented the parallax scrolling effect on my final page. This, for me anyway, feels the nicest page to navigate through. It took a while, but I thought it was important to give at least part of my website a nice design</p>
+    <h3>Creativity</h3>
+    <p>I have tried to show my creativity by using a variety of different skills and tools, to produce maybe slightly more intersting effects as opposed to making something that is exceedingly engaging visually. This is not a strong point for me. With the exception of my logo, I think that's pretty good.</p>
+</body>
+</html>

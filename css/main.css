@@ -5,13 +5,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
 
 body {
-    padding: 60px 0 0 0;
+    padding: 60px;
     background: url(../images/main_background.png)                     
          no-repeat center center fixed;
          -webkit-background-size: cover;
@@ -283,3 +279,4 @@ canvas {
         display: none;
     }
 }
+
